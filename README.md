@@ -1,3 +1,17 @@
+
+BÀI TOÁN:
+- Tạo csdl quan hệ với tên QLSV gồm các bảng sau:
+  + SinhVien(#masv,hoten,NgaySinh)
+  + Lop(#maLop,tenLop)
+  + GVCN(#@maLop,#@magv,#HK)
+  + LopSV(#@maLop,#@maSV,ChucVu)
+  + GiaoVien(#magv,hoten,NgaySinh,@maBM)
+  + BoMon(#MaBM,tenBM,@maKhoa)
+  + Khoa(#maKhoa,tenKhoa)
+  + MonHoc(#mamon,Tenmon,STC)
+  + LopHP(#maLopHP,TenLopHP,HK,@maMon,@maGV)
+  + DKMH(#@maLopHP,#@maSV,DiemTP,DiemThi,PhanTramThi)
+
 # SQl_homework
 bài tập sql sever
 -- Bảng SinhVien
